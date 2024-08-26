@@ -50,3 +50,19 @@ input[type="date"] {
 select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1.6rem) ;
 }
+
+.adress .flex {
+  gap: 2rem;
+}
+
+.input-wrapper:has(:disabled) {
+  opacity: .5;
+}
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);    
+    border: .1rem solid var(--stroke-dafault);
+    color: var(--text-primary);
+  }
+}
